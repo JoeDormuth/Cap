@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Navigation.master.cs"
+    Inherits="Capstone.Application.Web.Navigation" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .Main
+        {
+            background-color: black;
+            font: 12pt Arial;
+            color: Lime;
+        }
+        
+        .Header
+        {
+            background-color: black;
+            color: Lime;
+        }
+        
+        .body
+        {
+            background-color: Black;
+        }
+        
+        .NavSpacing
+        {
+            padding-left: 2em;
+            padding-right: 2em;
+            margin-left: 2em;
+            margin-right: 2em;
+            text-align: center;
+            width: 100%;
+            color: Lime;
+        }
+        
+        .Login
+        {
+            width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="body">
+    <form id="form1" runat="server" class="Main">
+    <div>
+        <h1 class="Header">
+            The A.S.S. Project</h1>
+    </div>
+    <div class="Main">
+        <table class="NavSpacing">
+            <tr>
+                <td>
+                    <asp:HyperLink ID="Home" runat="server" NavigateUrl="Home\Home.aspx" Font-Underline="false"
+                        ForeColor="LimeGreen" Text="Home"></asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="Projects" runat="server" NavigateUrl="Home\Projects\Project.aspx"
+                        Font-Underline="false" ForeColor="LimeGreen" Text="Projects"></asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="Bugs" runat="server" NavigateUrl="Home\Projects\Bugs\BugReport.aspx"
+                        Font-Underline="false" ForeColor="LimeGreen" Text="Bugs"></asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="Features" runat="server" NavigateUrl="Home\Feature\Feature.aspx"
+                        Font-Underline="false" ForeColor="LimeGreen" Text="Features"></asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="Reports" runat="server" NavigateUrl="Home\Reports\Reports.aspx"
+                        Font-Underline="false" ForeColor="LimeGreen" Text="Reports"></asp:HyperLink>
+                </td>
+                <td>
+                    <asp:HyperLink ID="Admin" runat="server" NavigateUrl="Home\Admin\Admin.aspx" Font-Underline="false"
+                        ForeColor="LimeGreen" Text="Admin Panel"></asp:HyperLink>
+                </td>
+                <asp:LoginView runat="server" ID="LoginView">
+                    <LoggedInTemplate>
+                        <td>
+                            <asp:LinkButton ID="SignIn" runat="server" Font-Underline="false" ForeColor="LimeGreen"
+                                Text="Logout" OnClick="SignIn_Click" />
+                        </td>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="Body" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

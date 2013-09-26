@@ -1,0 +1,11 @@
+Endpoint: capstone.ciozukiytibv.us-east-1.rds.amazonaws.com
+User: rootuser
+Password: rootuser 
+
+user roles:
+scrum master
+project owner
+developer 
+admin
+tester
+

@@ -1,0 +1,161 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capstone.Application.Web", "Capstone.Application.Web\Capstone.Application.Web.csproj", "{E22CA749-33FB-4579-A73B-A6DF57CD2E99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capstone.Infrastructure.Data", "Capstone.Infrastructure.Data\Capstone.Infrastructure.Data.csproj", "{EFB3670D-4516-409C-B127-F13C874A618D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{84759424-0028-4AC9-8DCA-24713CC00C79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{41AB55F5-0E02-4817-802E-811A007BC013}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4AAF644A-93EC-44CD-BAD4-B0FE5800CF34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Access", "Data Access", "{642F692B-7890-4793-87EB-56EFE4ED0B05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Util", "Util", "{35D2B1A4-4DE8-4C9B-9B09-F3457EC8B304}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service Host", "Service Host", "{B64BAFF0-70C1-4319-A41F-B318787E6363}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BA77D59A-8E1C-454D-9CC6-C532FECF9552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capstone.Services.Host", "Capstone.Services.Host\Capstone.Services.Host.csproj", "{F7A59E59-03BB-4001-82E7-D749A59A00E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capstone.Services.ShouldntBeHere", "Capstone.Services.ShouldntBeHere\Capstone.Services.ShouldntBeHere.csproj", "{E0D7A9EC-82CD-4F3C-9CD8-BAF6CA6FDAB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capstone.Infrastructure.Util", "Capstone.Infrastructure.Util\Capstone.Infrastructure.Util.csproj", "{7FA261BA-C3A8-4995-9247-CB3499F90091}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{04A12FD4-962F-4341-8708-AE977ED7E008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capstone.Infrastructure.Configuration", "Capstone.Infrastructure.Configuration\Capstone.Infrastructure.Configuration.csproj", "{DC3A2D6B-AD1D-4EE2-B5CE-00FD6F2C6E50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Documents", "1 Documents", "{EE2CB85A-DF9F-4BE7-B7C8-7A6FF8F9FF8C}"
+	ProjectSection(SolutionItems) = preProject
+		Database Information.txt = Database Information.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EF3F5C43-7172-4DD7-9E59-D4503894FC52}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs27
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Capstone.Application.Web\\Capstone.Application.Web.csproj
+		SccProjectTopLevelParentUniqueName1 = Capstone\u0020Project.sln
+		SccProjectName1 = Capstone.Application.Web
+		SccLocalPath1 = Capstone.Application.Web
+		SccProjectUniqueName2 = Capstone.Infrastructure.Configuration\\Capstone.Infrastructure.Configuration.csproj
+		SccProjectTopLevelParentUniqueName2 = Capstone\u0020Project.sln
+		SccProjectName2 = Capstone.Infrastructure.Configuration
+		SccLocalPath2 = Capstone.Infrastructure.Configuration
+		SccProjectUniqueName3 = Capstone.Infrastructure.Data\\Capstone.Infrastructure.Data.csproj
+		SccProjectTopLevelParentUniqueName3 = Capstone\u0020Project.sln
+		SccProjectName3 = Capstone.Infrastructure.Data
+		SccLocalPath3 = Capstone.Infrastructure.Data
+		SccProjectUniqueName4 = Capstone.Infrastructure.Util\\Capstone.Infrastructure.Util.csproj
+		SccProjectTopLevelParentUniqueName4 = Capstone\u0020Project.sln
+		SccProjectName4 = Capstone.Infrastructure.Util
+		SccLocalPath4 = Capstone.Infrastructure.Util
+		SccProjectUniqueName5 = Capstone.Services.Host\\Capstone.Services.Host.csproj
+		SccProjectTopLevelParentUniqueName5 = Capstone\u0020Project.sln
+		SccProjectName5 = Capstone.Services.Host
+		SccLocalPath5 = Capstone.Services.Host
+		SccProjectUniqueName6 = Capstone.Services.ShouldntBeHere\\Capstone.Services.ShouldntBeHere.csproj
+		SccProjectTopLevelParentUniqueName6 = Capstone\u0020Project.sln
+		SccProjectName6 = Capstone.Services.ShouldntBeHere
+		SccLocalPath6 = Capstone.Services.ShouldntBeHere
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E22CA749-33FB-4579-A73B-A6DF57CD2E99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E22CA749-33FB-4579-A73B-A6DF57CD2E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E22CA749-33FB-4579-A73B-A6DF57CD2E99}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E22CA749-33FB-4579-A73B-A6DF57CD2E99}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E22CA749-33FB-4579-A73B-A6DF57CD2E99}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E22CA749-33FB-4579-A73B-A6DF57CD2E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E22CA749-33FB-4579-A73B-A6DF57CD2E99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E22CA749-33FB-4579-A73B-A6DF57CD2E99}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E22CA749-33FB-4579-A73B-A6DF57CD2E99}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E22CA749-33FB-4579-A73B-A6DF57CD2E99}.Release|x86.ActiveCfg = Release|Any CPU
+		{EFB3670D-4516-409C-B127-F13C874A618D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFB3670D-4516-409C-B127-F13C874A618D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFB3670D-4516-409C-B127-F13C874A618D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EFB3670D-4516-409C-B127-F13C874A618D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EFB3670D-4516-409C-B127-F13C874A618D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EFB3670D-4516-409C-B127-F13C874A618D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFB3670D-4516-409C-B127-F13C874A618D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFB3670D-4516-409C-B127-F13C874A618D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EFB3670D-4516-409C-B127-F13C874A618D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EFB3670D-4516-409C-B127-F13C874A618D}.Release|x86.ActiveCfg = Release|Any CPU
+		{F7A59E59-03BB-4001-82E7-D749A59A00E9}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{F7A59E59-03BB-4001-82E7-D749A59A00E9}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{F7A59E59-03BB-4001-82E7-D749A59A00E9}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{F7A59E59-03BB-4001-82E7-D749A59A00E9}.Debug|x86.ActiveCfg = Debug|x86
+		{F7A59E59-03BB-4001-82E7-D749A59A00E9}.Debug|x86.Build.0 = Debug|x86
+		{F7A59E59-03BB-4001-82E7-D749A59A00E9}.Release|Any CPU.ActiveCfg = Release|x86
+		{F7A59E59-03BB-4001-82E7-D749A59A00E9}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{F7A59E59-03BB-4001-82E7-D749A59A00E9}.Release|Mixed Platforms.Build.0 = Release|x86
+		{F7A59E59-03BB-4001-82E7-D749A59A00E9}.Release|x86.ActiveCfg = Release|x86
+		{F7A59E59-03BB-4001-82E7-D749A59A00E9}.Release|x86.Build.0 = Release|x86
+		{E0D7A9EC-82CD-4F3C-9CD8-BAF6CA6FDAB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0D7A9EC-82CD-4F3C-9CD8-BAF6CA6FDAB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0D7A9EC-82CD-4F3C-9CD8-BAF6CA6FDAB7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E0D7A9EC-82CD-4F3C-9CD8-BAF6CA6FDAB7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E0D7A9EC-82CD-4F3C-9CD8-BAF6CA6FDAB7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E0D7A9EC-82CD-4F3C-9CD8-BAF6CA6FDAB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0D7A9EC-82CD-4F3C-9CD8-BAF6CA6FDAB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0D7A9EC-82CD-4F3C-9CD8-BAF6CA6FDAB7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E0D7A9EC-82CD-4F3C-9CD8-BAF6CA6FDAB7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E0D7A9EC-82CD-4F3C-9CD8-BAF6CA6FDAB7}.Release|x86.ActiveCfg = Release|Any CPU
+		{7FA261BA-C3A8-4995-9247-CB3499F90091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FA261BA-C3A8-4995-9247-CB3499F90091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FA261BA-C3A8-4995-9247-CB3499F90091}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7FA261BA-C3A8-4995-9247-CB3499F90091}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7FA261BA-C3A8-4995-9247-CB3499F90091}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7FA261BA-C3A8-4995-9247-CB3499F90091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FA261BA-C3A8-4995-9247-CB3499F90091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FA261BA-C3A8-4995-9247-CB3499F90091}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7FA261BA-C3A8-4995-9247-CB3499F90091}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7FA261BA-C3A8-4995-9247-CB3499F90091}.Release|x86.ActiveCfg = Release|Any CPU
+		{DC3A2D6B-AD1D-4EE2-B5CE-00FD6F2C6E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC3A2D6B-AD1D-4EE2-B5CE-00FD6F2C6E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC3A2D6B-AD1D-4EE2-B5CE-00FD6F2C6E50}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DC3A2D6B-AD1D-4EE2-B5CE-00FD6F2C6E50}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DC3A2D6B-AD1D-4EE2-B5CE-00FD6F2C6E50}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DC3A2D6B-AD1D-4EE2-B5CE-00FD6F2C6E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC3A2D6B-AD1D-4EE2-B5CE-00FD6F2C6E50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC3A2D6B-AD1D-4EE2-B5CE-00FD6F2C6E50}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DC3A2D6B-AD1D-4EE2-B5CE-00FD6F2C6E50}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DC3A2D6B-AD1D-4EE2-B5CE-00FD6F2C6E50}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E22CA749-33FB-4579-A73B-A6DF57CD2E99} = {84759424-0028-4AC9-8DCA-24713CC00C79}
+		{642F692B-7890-4793-87EB-56EFE4ED0B05} = {4AAF644A-93EC-44CD-BAD4-B0FE5800CF34}
+		{35D2B1A4-4DE8-4C9B-9B09-F3457EC8B304} = {4AAF644A-93EC-44CD-BAD4-B0FE5800CF34}
+		{04A12FD4-962F-4341-8708-AE977ED7E008} = {4AAF644A-93EC-44CD-BAD4-B0FE5800CF34}
+		{B64BAFF0-70C1-4319-A41F-B318787E6363} = {41AB55F5-0E02-4817-802E-811A007BC013}
+		{BA77D59A-8E1C-454D-9CC6-C532FECF9552} = {41AB55F5-0E02-4817-802E-811A007BC013}
+		{EFB3670D-4516-409C-B127-F13C874A618D} = {642F692B-7890-4793-87EB-56EFE4ED0B05}
+		{7FA261BA-C3A8-4995-9247-CB3499F90091} = {35D2B1A4-4DE8-4C9B-9B09-F3457EC8B304}
+		{F7A59E59-03BB-4001-82E7-D749A59A00E9} = {B64BAFF0-70C1-4319-A41F-B318787E6363}
+		{E0D7A9EC-82CD-4F3C-9CD8-BAF6CA6FDAB7} = {BA77D59A-8E1C-454D-9CC6-C532FECF9552}
+		{DC3A2D6B-AD1D-4EE2-B5CE-00FD6F2C6E50} = {04A12FD4-962F-4341-8708-AE977ED7E008}
+	EndGlobalSection
+EndGlobal

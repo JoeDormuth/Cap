@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFB3670D-4516-409C-B127-F13C874A618D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Capstone.Infrastructure.Data</RootNamespace>
+    <AssemblyName>Capstone.Infrastructure.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseRepository.cs" />
+    <Compile Include="EF\Entities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Entities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\aspnet_Applications.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\aspnet_Membership.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\aspnet_Paths.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\aspnet_PersonalizationAllUsers.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\aspnet_PersonalizationPerUser.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\aspnet_Profile.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\aspnet_Roles.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\aspnet_SchemaVersions.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\aspnet_Users.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\aspnet_WebEvent_Events.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\Features_Bugs.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\Permission.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\PermissionCategory.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\Project.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\ProjectBacklog.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\ReleaseBacklog.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\Sprint.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\sysdiagram.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\UserProjectPermission.cs">
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\IUnitOfWork.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IUnitOfWork.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\UnitOfWork.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnitOfWork.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Entities\UnitOfWork.Entity.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UnitOfWork.Entity.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\UnitOfWork.Extensions.cs">
+      <DependentUpon>UnitOfWork.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ISQL.cs" />
+    <Compile Include="IQueryableExtensions.cs" />
+    <Compile Include="Repositories\aspnet_ApplicationsRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\aspnet_MembershipRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\aspnet_PathsRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\aspnet_PersonalizationAllUsersRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\aspnet_PersonalizationPerUserRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\aspnet_ProfileRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\aspnet_RolesRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\aspnet_SchemaVersionsRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\aspnet_UsersRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\aspnet_WebEvent_EventsRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Features_BugsRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Iaspnet_ApplicationsRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Iaspnet_MembershipRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Iaspnet_PathsRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Iaspnet_PersonalizationAllUsersRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Iaspnet_PersonalizationPerUserRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Iaspnet_ProfileRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Iaspnet_RolesRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Iaspnet_SchemaVersionsRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Iaspnet_UsersRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Iaspnet_WebEvent_EventsRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\IFeatures_BugsRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\IPermissionCategoryRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\IPermissionRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\IProjectBacklogRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\IProjectRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\IReleaseBacklogRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\ISprintRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\IsysdiagramRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\IUserProjectPermissionRepository.cs">
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\PermissionCategoryRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\PermissionRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\ProjectBacklogRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\ProjectRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\ReleaseBacklogRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\Repository.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\RepositoryInterfaces.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepositoryInterfaces.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\SprintRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\sysdiagramRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\UserProjectPermissionRepository.cs">
+      <DependentUpon>Repository.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Services\CreateFeatureBugRequest.cs" />
+    <Compile Include="Services\CreateProjectRequest.cs" />
+    <Compile Include="Services\CreateReleseBacklogRequest.cs" />
+    <Compile Include="Services\CreateSprintRequest.cs" />
+    <Compile Include="Services\GetFeaturesAndBugsRequest.cs" />
+    <Compile Include="Services\GetProjectBacklogRequest.cs" />
+    <Compile Include="Services\GetProjectsRequest.cs" />
+    <Compile Include="Services\GetReleaseBacklogRequest.cs" />
+    <Compile Include="Services\GetSprintsRequest.cs" />
+    <Compile Include="Services\ServiceRequest.cs" />
+    <Compile Include="Services\UpdateFeaturesBugsRequest.cs" />
+    <Compile Include="Services\UpdateProjectBacklogRequest.cs" />
+    <Compile Include="Services\UpdateProjectRequest.cs" />
+    <Compile Include="Services\UpdateReleaseBacklogRequest.cs" />
+    <Compile Include="Services\UpdateSprintRequest.cs" />
+    <Compile Include="Specification\AndAllSpecification.cs" />
+    <Compile Include="Specification\AndSpecification.cs" />
+    <Compile Include="Specification\CompositeSpecification.cs" />
+    <Compile Include="Specification\DirectSpecification.cs" />
+    <Compile Include="Specification\ExpressionBuilder.cs" />
+    <Compile Include="Specification\InSpecification.cs" />
+    <Compile Include="Specification\NotSpecification.cs" />
+    <Compile Include="Specification\OrSpecification.cs" />
+    <Compile Include="Specification\ParameterRebinder.cs" />
+    <Compile Include="Specification\Specification.cs" />
+    <Compile Include="Interface\IRepository.cs" />
+    <Compile Include="Interface\ISpecification.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ServiceResponse.cs" />
+    <Compile Include="Specification\TrueSpecification.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="EF\Entities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Entities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EF\IUnitOfWork.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IUnitOfWork.cs</LastGenOutput>
+    </None>
+    <None Include="EF\Entities\UnitOfWork.Entity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>UnitOfWork.Entity.cs</LastGenOutput>
+    </None>
+    <None Include="EF\UnitOfWork.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>UnitOfWork.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Repositories\Repository.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Repository.cs</LastGenOutput>
+    </None>
+    <None Include="Repositories\RepositoryInterfaces.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>RepositoryInterfaces.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
